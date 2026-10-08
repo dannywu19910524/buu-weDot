@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "mode": "real",
+  "resource": "https://bridge.example.com/mcp",
+  "listen": {
+    "host": "127.0.0.1",
+    "port": 8787
+  },
+  "owner": {
+    "canonicalId": "REPLACE_WITH_FIXED_OWNER"
+  },
+  "auth": {
+    "mode": "jwt",
+    "issuer": "https://identity.example.com",
+    "subject": "REPLACE_WITH_FIXED_SUBJECT",
+    "requiredScope": "weixin:owner",
+    "jwksFile": "./secrets/jwks.json"
+  },
+  "state": {
+    "database": "./state/real.sqlite",
+    "keyFile": "./secrets/state-key"
+  },
+  "callbackHosts": [
+    "callbacks.example.com"
+  ],
+  "real": {
+    "enable": false,
+    "bindingFile": "./secrets/weixin-binding.json",
+    "clientVersion": "2.4.9"
+  },
+  "features": {
+    "inboundImages": true,
+    "outboundImages": false,
+    "quoteReplies": true,
+    "quoteCache": false,
+    "processing": false,
+    "typing": false,
+    "receiptTyping": false,
+    "notifications": false,
+    "acknowledgements": false,
+    "notificationContextMs": 3600000,
+    "providerStartNotice": false
+  }
+}

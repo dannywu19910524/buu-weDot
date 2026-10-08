@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "mode": "mock",
+  "resource": "http://127.0.0.1:8787/mcp",
+  "listen": {
+    "host": "127.0.0.1",
+    "port": 8787
+  },
+  "owner": {
+    "canonicalId": "local-development-owner"
+  },
+  "auth": {
+    "mode": "local-bearer",
+    "tokenFile": "./secrets/local-token"
+  },
+  "state": {
+    "database": "./state/mock.sqlite",
+    "keyFile": "./secrets/state-key"
+  },
+  "callbackHosts": [
+    "callbacks.example.com"
+  ],
+  "features": {
+    "inboundImages": true,
+    "outboundImages": false,
+    "quoteReplies": true,
+    "quoteCache": false,
+    "processing": false,
+    "typing": false,
+    "receiptTyping": false,
+    "notifications": false,
+    "acknowledgements": false,
+    "notificationContextMs": 3600000,
+    "providerStartNotice": false
+  }
+}

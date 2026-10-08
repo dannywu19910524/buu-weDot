@@ -1,0 +1,8 @@
+{
+  "botToken": "REPLACE_WITH_LOCAL_PRIVATE_VALUE",
+  "botId": "REPLACE_WITH_OWN_BOT_ID",
+  "ownerPeerId": "REPLACE_WITH_OWN_PEER_ID",
+  "apiBase": "https://ilinkai.weixin.qq.com",
+  "boundAtMs": 0,
+  "consent": {"persist": true, "receive": true, "send": false}
+}
