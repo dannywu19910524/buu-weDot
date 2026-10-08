@@ -1,0 +1,17 @@
+node_modules/
+.local/
+state/
+secrets/
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.lock
+*.log
+*.pem
+*.key
+.DS_Store
+coverage/
+!package-lock.json
